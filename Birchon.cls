@@ -579,20 +579,26 @@ Birchon Document Class]
 \fi
 
 \usepackage{polyglossia, lettrine, graphicx, parallel}
-\usepackage{geometry}
+\usepackage{geometry, fancyhdr}
 \usepackage{fontspec}
 \usepackage{bidi}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 \setdefaultlanguage{hebrew}
 \setotherlanguage{english}
 
 \hyphenpenalty=100
-\geometry{left=0.25in, right=0.25in, top=1in, bottom=0.5in}
+\geometry{left=0.5in, right=0.5in, top=0.75in, bottom=0.55in}
 
 \setmainfont[ItalicFont=BELLI.TTF]{BELL.TTF}
 
-\setmonofont{EB Garamond}
-\setsansfont{EB Garamond}
+%\setmonofont{EB Garamond}
+%\setsansfont{EB Garamond}
 % Use the following if you only want to change the font for Hebrew
 \newfontfamily\hebrewfont[Script=Hebrew]{Ezra SIL SR}
 %\newfontfamily\hebrewfonttt[Script=Hebrew]{Miriam Mono CLM}
@@ -612,6 +618,7 @@ Birchon Document Class]
 \newcommand\regPage[3]{
 %Hebrew Text
 #1
+\vskip 1em
 
 %English translation
 \begin{english}
@@ -622,6 +629,9 @@ Birchon Document Class]
 
 %Commentary or footnote or story
 \begin{english}
+\begin{center}
+\includegraphics[height=.8em]{PageElements/flourish.png}
+\end{center}
 \begin{itpars}
 #3
 \end{itpars}
