@@ -1,9 +1,18 @@
-\documentclass{minimal}
+\documentclass[a5paper, 12pt]{book}
 \usepackage{polyglossia, lettrine, graphicx}
-\usepackage[paperheight=5in,paperwidth=5in]{geometry}
-
+\usepackage {geometry}
+\geometry{bottom=.5in}
 \newlength{\textundbildtextheight}
  
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\makeatletter
+\def\@seccntformat#1{\csname #1ignore\expandafter\endcsname\csname the#1\endcsname\quad}
+\let\sectionignore\@gobbletwo
+\let\latex@numberline\numberline
+\def\numberline#1{\if\relax#1\relax\else\latex@numberline{#1}\fi}
+\makeatother
+
 \newcommand{\textundbild}[2]{
 \settototalheight\textundbildtextheight{\vbox{#1}}
 #1
@@ -19,35 +28,64 @@
 \setdefaultlanguage{hebrew}
 \setotherlanguage{english}
 \usepackage{fontspec}
-\setmainfont{Ezra SIL}
+\setmainfont{Bell MT}
 \setmonofont{Ezra SIL}
 \setsansfont{Ezra SIL}
 % Use the following if you only want to change the font for Hebrew
-\newfontfamily\hebrewfont[Script=Hebrew]{Ezra SIL}
+\newfontfamily\hebrewfont[Script=Hebrew]{Ezra SIL SR}
 %\newfontfamily\hebrewfonttt[Script=Hebrew]{Miriam Mono CLM}
 %\newfontfamily\hebrewfontsf[Script=Hebrew]{Simple CLM}
 
 \makeatletter
 \makeatother
-\usepackage{bidi}
-\begin{document}
 
-\begin{samepage}
-\lettrine[lines=2, depth=1, findent=1.5em]{בָּרוּךְ} אַתָּה יְהֹוָה אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, הָאֵל הַזָּן אוֹתָנוּ וְאֶת הָעוֹלָם כֻּלּוֹ בְּטוּבוֹ, בְּחֵן בְּחֶסֶד בְּרֵיוַח וּבְרַחֲמִים רַבִּים, נֹתֵן לֶחֶם לְכָל בָּשָׂר. כִּי לְעוֹלָם חַסְדּוֹ: וּבְטוּבוֹ הַגָּדוֹל, תָּמִיד לֹא חָסַר לָנוּ, וְאַל יֶחְסַר לָנוּ מָזוֹן תָּמִיד לְעוֹלָם וָעֶד. כִּי הוּא אֵל זָן וּמְפַרְנֵס לַכֹּל, וְשֻׁלְחָנוֹ עָרוּךְ לַכֹּל, וְהִתְקִין מִחְיָה וּמָזוֹן לְכָל בְּרִיּוֹתָיו אֲשֶׁר בָּרָא בְרַחֲמָיו וּבְרוֹב חֲסָדָיו, כָּאָמוּר.פּוֹתֵחַ אֶת יָדֶךָ. וּמַשְׂבִּיעַ לְכָל חַי רָצוֹן: בָּרוּךְ אַתָּה יְהֹוָה הַזָּן אֶת הַכֹּל:
+\usepackage{bidi}
+
+\begin{document}
+Nothing
+
+\eject
+
+\lettrine[lines=2, depth=1, findent=1.5em]{בָּרוּךְ} אַתָּה יְהֹוָה אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, הָאֵל {\LARGE הַזָּן }אוֹתָנוּ וְאֶת  הָעוֹלָם כֻּלּוֹ בְּטוּבוֹ, בְּחֵן בְּחֶסֶד בְּרֵיוַח וּבְרַחֲמִים רַבִּים, נֹתֵן לֶחֶם לְכָל בָּשָׂר. כִּי לְעוֹלָם חַסְדּוֹ: וּבְטוּבוֹ הַגָּדוֹל, תָּמִיד לֹא חָסַר לָנוּ, וְאַל יֶחְסַר לָנוּ מָזוֹן תָּמִיד לְעוֹלָם וָעֶד. כִּי הוּא אֵל {\LARGE זָן } וּמְפַרְנֵס לַכֹּל, וְשֻׁלְחָנוֹ עָרוּךְ לַכֹּל, וְהִתְקִין מִחְיָה וּמָזוֹן לְכָל בְּרִיּוֹתָיו אֲשֶׁר בָּרָא בְרַחֲמָיו וּבְרוֹב חֲסָדָיו, כָּאָמוּר.פּוֹתֵחַ אֶת יָדֶךָ. וּמַשְׂבִּיעַ לְכָל חַי רָצוֹן: בָּרוּךְ אַתָּה יְהֹוָה  {\LARGE הַזָּן }אֶת הַכֹּל:
 
 \begin{english}
+\lettrine{B}lessed are You, L-rd our G‑d, King of the universe, Who, in His goodness, provides sustenance for the entire world with grace, with kindness, and with mercy. He gives food to all flesh, for His kindness is everlasting. Through His great goodness to us continuously we do not lack [food], and may we never lack food, for the sake of His great Name. For He, benevolent G‑d, provides nourishment and sustenance for all, does good to all, and prepares food for all His creatures whom He has created, as it is said: You open Your hand and satisfy the desire of every living thing. Blessed are You, L-rd, Who provides food for all.
 
-\lettrine[]{B}lessed are You, L-rd our G‑d, King of the universe, Who, in His goodness, provides sustenance for the entire world with grace, with kindness, and with mercy. He gives food to all flesh, for His kindness is everlasting. Through His great goodness to us continuously we do not lack [food], and may we never lack food, for the sake of His great Name. For He, benevolent G‑d, provides nourishment and sustenance for all, does good to all, and prepares food for all His creatures whom He has created, as it is said: You open Your hand and satisfy the desire of every living thing. Blessed are You, L-rd, Who provides food for all.
+\textit{
+The first blessing is about sustenance. And since Zan's name rhymes with the word for sustenance, we made them large. The second benediction is traditionally attributed to Joshua. It is said in appreciation for the Land of Israel. There is a lot of lorum ipsum dolor sit amet.
+}
 
 \end{english}
-\end{samepage}
+
+\eject
 
 \begin{center}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio=true]{20171001_110554_edited}
+\includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio=true]{20171001_110554_edited}
 \end{center}
+
+\begin{english}
+Ba-ruch a-tah A-do-nai, E-lo-hei-nu Me-lech Ha-o-lam,
+Ha-zan et ha-o-lam ku-lo, b'tu-vo,
+b'chein b'che-sed uv-ra-cha-mim,
+hu no-tein le-chem l'chawl ba-sar, ki l'o-lam chas-do.
+Uv-tu-vo ha-ga-dol i-ma-nu, ta-mid lo cha-seir la-nu,
+v'al yech-sar la-nu, ma-zon l'o-lam va-ed.
+Ba-a-vur sh'mo ha-ga-dol, ki hu Eil zan um-far-neis la-kol,
+u-mei-tiv la-kol, u-mei-chin ma-zon
+l'chawl b'ri-yo-tav a-sher ba-ra.
+Ka-a-mur: Po-tei-ach et ya-de-cha, u-mas-bi-a l'chawl chai ra-tson.
+Ba-ruch a-tah A-do-nai, ha-zan et ha-kol.
+
+\end{english}
+
+\eject
 
 \lettrine[lines=2, depth=1, findent=1.5em]{נוֹדֶה}לְךָ יְהֹוָה אֱלֹהֵינוּ, עַל שֶׁהִנְחַלְתָּ לַאֲבוֹתֵינוּ אֶרֶץ חֶמְדָה טוֹבָה וּרְחָבָה, בְּרִית וְתוֹרָה, חַיִּים וּמָזוֹן. עַל שֶׁהוֹצֵאתָנוּ מֵאֶרֶץ מִצְרַיִם, וּפְדִיתָנוּ מִבֵּית עֲבָדִים. וְעַל בְּרִיתְךָ שֶׁחָתַמְתָּ בִּבְשָׂרֵנוּ. וְעַל תּוֹרָתְךָ שֶׁלִּמַּדְתָּנוּ. וְעַל חֻקֵּי רְצוֹנָךְ שֶׁהוֹדַעְתָּנוּ. וְעַל חַיִּים וּמָזוֹן שֶׁאַתָּה זָן וּמְפַרְנֵס אוֹתָנוּ:
 
+\begin{english}
 
+\lettrine{W}e offer thanks to You, L-rd our G‑d, for having given as a heritage to our ancestors a precious, good and spacious land; for having brought us out, L-rd our G‑d, from the land of Egypt, and redeemed us from the house of bondage; for Your covenant which You have sealed in our flesh; for Your Torah which You have taught us; for Your statutes which You have made known to us; for the life, favor, and kindness which You have graciously bestowed upon us; and for the food we eat with which You constantly nourish and sustain us every day, at all times, and at every hour.
+
+\end{english}
 
 \end{document}
