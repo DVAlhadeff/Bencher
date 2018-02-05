@@ -1,0 +1,54 @@
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {section}{Foreword}{2}
+\contentsline {section}{Introduction}{2}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {section}{Grace After Meals}{3}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{Invitation to Say Grace / Zimun}{4}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{Blessing of Sustenance}{5}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{Blessing of the Land}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{Blessing of Jerusalem}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{Blessings of Well-being}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{Concluding Hymns}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {subsection}{The Seven Blessings of Marriage}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {section}{Order of Friday Night/Festival Kiddush}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {section}{Order of Havdalah}{6}
+\select@language {hebrew}
+\select@language {english}
+\contentsline {section}{Table Songs}{6}
+\select@language {hebrew}
