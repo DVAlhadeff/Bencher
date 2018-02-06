@@ -578,6 +578,7 @@ Birchon Document Class]
   \onecolumn
 \fi
 
+\usepackage{array, tabu}
 \usepackage{polyglossia, lettrine, graphicx, parallel}
 \usepackage{geometry, fancyhdr}
 \usepackage{fontspec}
@@ -585,7 +586,7 @@ Birchon Document Class]
 
 \pagestyle{fancy}
 \fancyhf{}
-\rfoot{\thepage}
+
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
