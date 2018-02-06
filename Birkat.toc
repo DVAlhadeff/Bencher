@@ -29,27 +29,27 @@
 \select@language {english}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {subsection}{Blessing of the Land}{6}
+\contentsline {subsection}{Blessing of the Land}{7}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {subsection}{Blessing of Jerusalem}{6}
+\contentsline {subsection}{Blessing of Jerusalem}{8}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {subsection}{Blessings of Well-being}{6}
+\contentsline {subsection}{Blessings of Well-being}{9}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {subsection}{Concluding Hymns}{6}
+\contentsline {subsection}{Concluding Hymns}{10}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {subsection}{The Seven Blessings of Marriage}{6}
+\contentsline {subsection}{The Seven Blessings of Marriage}{11}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {section}{Order of Friday Night/Festival Kiddush}{6}
+\contentsline {section}{Friday Night/Festival Kiddush}{12}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {section}{Order of Havdalah}{6}
+\contentsline {section}{Havdalah}{13}
 \select@language {hebrew}
 \select@language {english}
-\contentsline {section}{Table Songs}{6}
-\contentsline {subsubsection}{Scalerica de Oro}{6}
+\contentsline {section}{Table Songs}{14}
+\contentsline {subsubsection}{Scalerica de Oro}{14}
 \select@language {hebrew}
