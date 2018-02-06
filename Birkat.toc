@@ -51,4 +51,5 @@
 \select@language {hebrew}
 \select@language {english}
 \contentsline {section}{Table Songs}{6}
+\contentsline {subsubsection}{Scalerica de Oro}{6}
 \select@language {hebrew}
