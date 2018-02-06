@@ -9,6 +9,16 @@
 \contentsline {section}{Grace After Meals}{3}
 \select@language {hebrew}
 \select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
+\select@language {hebrew}
+\select@language {english}
 \contentsline {subsection}{Invitation to Say Grace / Zimun}{4}
 \select@language {hebrew}
 \select@language {english}
@@ -51,5 +61,7 @@
 \select@language {hebrew}
 \select@language {english}
 \contentsline {section}{Table Songs}{14}
-\contentsline {subsubsection}{Scalerica de Oro}{14}
+\contentsline {subsubsection}{Purim lano,\dots Pesah a la mano}{14}
+\contentsline {subsubsection}{Cuando El Rey Nimrod}{15}
+\contentsline {subsubsection}{Scalerica de Oro}{16}
 \select@language {hebrew}
